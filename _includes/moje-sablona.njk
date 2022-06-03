@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap" rel="stylesheet">
+   
+
+	<!-- Naše vlastní CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="wrapper">
+    <header class="header">
+
+        <div class="header__logo"><a href="/" class="header__logo__link">Rýsujeme.cz</a></div>
+    
+    <nav class="menu">
+
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+        <label for="menu-checkbox" class="menu__toggler"> ☰ Menu</label>
+
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+            <li class="menu__item"><a href="/aboutme/" class="menu__link">O mně</a></li>
+            <li class="menu__item"><a href="/projects/" class="menu__link">Služby a Projekce</a></li>
+            <li class="menu__item"><a href="/realization/" class="menu__link">Realizace</a></li>
+            <li class="menu__item"><a href="/contact/" class="menu__link">Kontakt</a></li>
+        </ul>    
+    </nav>
+
+      </header>
+    </div>
+
+
+    <section class="mainpage">
+    
+    {{ content | safe }}
+    
+    </section>
+
+
+
+    
+<footer class="footer">
+    <div class="footer__name">
+        Tomas.Prusa@rysujeme.cz
+    </div>  
+    <div class="footer__tel">
+        +420 605 024 651
+    </div> 
+</footer>   
+
+</body>
+</html>   
